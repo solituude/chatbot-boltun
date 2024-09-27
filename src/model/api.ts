@@ -5,7 +5,7 @@ export const postNewMessage = async (text: string) => {
         body: JSON.stringify({sender: "user", text, time: date})
     });
     const data = await response.json();
-    // console.log(data);
+    console.log(data);
 }
 
 export const getDialog = async () => {
